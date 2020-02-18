@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+    <h1>
+      <button id="login">Login</button>
+      <button id="logout" class="hidden">Logout</button>
+      chat App
+    </h1>
     <!-- header -->
     <hgroup class="heading">
     <h1 class="major">Login Form </h1>
@@ -17,8 +22,8 @@
     <form class="sign-up">
         <h1 class="sign-up-title">Sign up in seconds</h1>
         <input type="text" class="sign-up-input" placeholder="What's your username?" autofocus>
-        <input type="password" class="sign-up-input" placeholder="Choose a password">
-        <input type="submit" value="Sign me up!" class="sign-up-button">
+        <!-- <input type="password" class="sign-up-input" placeholder="Choose a password"> -->
+        <input onclick="location.href='index.html'" type="botton" value="Sign me up!" class="sign-up-button" id="login">
       </form>
     
       <div class="about">
@@ -32,7 +37,14 @@
           Original PSD by <a href="http://dribbble.com/shots/1037950-Sign-up-freebie" target="_blank">Dylan Opet</a>
         </p>
       </div>
-    
-</body>
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>   
+  
+      <script src="js/login.js"></script>
+    </body>
 </html>
 
