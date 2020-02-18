@@ -28,6 +28,28 @@
     const login = document.getElementById('login');
     const logout = document.getElementById('logout');
 
+
+    // function func1() {
+    //     const username = document.getElementById("username");
+    //     username = "入力された内容は「" + username + "」です。";
+    //     document.getElementById("output_message").innerHTML = username;
+    // }
+
+    // const submit = document.getElementById("submit");
+    // submit.addEventListener('click', () => {
+    //     const username = document.getElementById("username");
+    //     username = "入力された内容は「" + username + "」です。";
+    //     document.getElementById("output_message").innerHTML = username;
+
+    // });
+
+    document.getElementById("submit").onclick = function() {
+        var username = document.getElementById("username").value;
+        console.log(username);
+        username = "入力された内容は「" + username + "」です。";
+        document.getElementById("output_message").innerHTML = username;
+    };
+
     login.addEventListener('click', () => { 
         auth.signInAnonymously();
     });
